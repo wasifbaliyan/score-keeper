@@ -1,3 +1,3 @@
 # Score Keeper
 
-### Built using HTML, CSS and Vanilla JS.
+Built using HTML, CSS and Vanilla JS.
