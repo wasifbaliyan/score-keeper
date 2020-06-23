@@ -5,6 +5,7 @@ let score1 = document.querySelector(".one");
 let score2 = document.querySelector(".two");
 let inputScore = document.querySelector("input");
 let maxScore = document.querySelector(".scoreUpTo");
+let winner = document.querySelector(".winner");
 let gameOver = false;
 let winningScore = 5;
 
@@ -14,7 +15,8 @@ player1.addEventListener("click", function () {
     if (score1.textContent == winningScore) {
       gameOver = true;
       score1.classList.add("success");
-      alert("Player 1 is the winner");
+      winner.style.display = "block";
+      winner.textContent = "Player 1 Win the game.";
     }
   }
 });
@@ -24,7 +26,8 @@ player2.addEventListener("click", function () {
     if (score2.textContent == winningScore) {
       gameOver = true;
       score2.classList.add("success");
-      alert("Player 2 is the winner");
+      winner.style.display = "block";
+      winner.textContent = "Player 2 is the Winner.";
     }
   }
 });
@@ -34,6 +37,7 @@ function resetGame() {
   gameOver = false;
   score1.classList.remove("success");
   score2.classList.remove("success");
+  winner.style.display = "none";
 }
 reset.addEventListener("click", function () {
   resetGame();

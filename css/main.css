@@ -27,7 +27,13 @@ body {
   margin: 0 auto;
   padding: 2.5rem;
 }
-
+.winner {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: green;
+  font-weight: 300;
+  text-align: center;
+}
 .one,
 .two {
   font-size: 3rem;
